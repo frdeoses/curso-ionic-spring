@@ -8,12 +8,14 @@ import lombok.ToString;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "custumers")
+@Table(name = "employee")
 @ToString
 @EqualsAndHashCode
-public class Custumer {
+public class Employee {
+
     @Id
-    @Getter @Setter
+    @Getter
+    @Setter
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private Long id;
 
@@ -32,5 +34,6 @@ public class Custumer {
     @Getter @Setter
     private String address;
 
-
+    @Getter @Setter
+    private Double salary;
 }
