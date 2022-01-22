@@ -13,7 +13,7 @@ public class SupplierController {
     @Autowired
     private ISupplierService service;
 
-    @GetMapping("/api/supplier")
+    @GetMapping("/api/suppliers")
     public List<Supplier> getAll(){
 
         return service.getAll();

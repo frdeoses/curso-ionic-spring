@@ -9,7 +9,7 @@ import lombok.ToString;
 import javax.persistence.*;
 
 @Entity
-@Table(name = "supplier")
+@Table(name = "suppliers")
 @ToString
 @EqualsAndHashCode
 public class Supplier {
